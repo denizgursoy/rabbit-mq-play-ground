@@ -3,7 +3,7 @@ package org.example.direct;
 import org.example.ExchangeTypes;
 import org.example.RabbitUtils;
 
-public class DirectBindingCreator {
+public class DirectExchangeCreator {
 
     public final static String DIRECT_EXCHANGE = "my_direct_exchange";
     public final static String DIRECT_QUEUE_NAME = "my_queue";

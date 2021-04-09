@@ -4,8 +4,8 @@ import org.example.RabbitUtils;
 
 import java.nio.charset.StandardCharsets;
 
-import static org.example.direct.DirectBindingCreator.DIRECT_EXCHANGE;
-import static org.example.direct.DirectBindingCreator.DIRECT_ROUTING_2;
+import static org.example.direct.DirectExchangeCreator.DIRECT_EXCHANGE;
+import static org.example.direct.DirectExchangeCreator.DIRECT_ROUTING_2;
 
 public class DirectProducer2 {
     public static void main(String[] args) {

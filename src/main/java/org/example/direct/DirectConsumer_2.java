@@ -9,7 +9,7 @@ public class DirectConsumer_2 {
 
         RabbitUtils.getChannel().ifPresent(channel -> {
             try {
-                channel.basicConsume(DirectBindingCreator.DIRECT_QUEUE_NAME, true, (consumerTag, message) -> {
+                channel.basicConsume(DirectExchangeCreator.DIRECT_QUEUE_NAME, true, (consumerTag, message) -> {
                     String str = new String(message.getBody(), "UTF-8");
                     System.out.println("DirectConsumer_2 received");
                     System.out.println(" [x] Received '" + str + "'");

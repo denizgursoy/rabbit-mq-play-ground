@@ -9,7 +9,7 @@ public enum ExchangeTypes {
 
     private final String type;
 
-    private ExchangeTypes(String type) {
+    ExchangeTypes(String type) {
         this.type=type;
     }
 
