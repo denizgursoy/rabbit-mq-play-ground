@@ -11,10 +11,10 @@ public class RabbitUtils {
         try {
             ConnectionFactory connectionFactory = new ConnectionFactory();
             connectionFactory.setHost("localhost");
-
             Connection connection = connectionFactory.newConnection();
             return Optional.of(connection.createChannel());
         } catch (Exception e) {
+            e.printStackTrace();
             return Optional.empty();
         }
     }
